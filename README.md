@@ -60,8 +60,13 @@ Ejecuta Jupyter Notebook:
 
 jupyter notebook
 Abre el archivo .ipynb
+
 Principales conclusiones
-Los géneros Action y Sports lideran las ventas globales.
-Las preferencias de los usuarios cambian según la región.
-Algunas plataformas presentan ciclos de vida claramente definidos.
-Las puntuaciones de críticos muestran relación con el rendimiento comercial de ciertos videojuegos.
+
+- Los géneros Action y Sports lideran las ventas globales.
+
+- Las preferencias de los usuarios cambian según la región.
+  
+- Algunas plataformas presentan ciclos de vida claramente definidos.
+  
+- Las puntuaciones de críticos muestran relación con el rendimiento comercial de ciertos videojuegos.
