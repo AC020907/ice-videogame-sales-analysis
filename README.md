@@ -1,51 +1,78 @@
-```markdown
-# Análisis de Ventas de Videojuegos - Ice Store
+# Análisis de Ventas de Videojuegos
 
-📋 Descripción del Proyecto
-Este proyecto analiza patrones de éxito en la industria de videojuegos utilizando datos históricos de ventas, reseñas y características de juegos hasta 2016. El objetivo es identificar proyectos prometedores y planificar campañas publicitarias efectivas para la tienda online Ice, proporcionando insights estratégicos para el año 2017.
+## Descripción del proyecto
 
-🎯 Objetivos
-Identificar patrones de éxito en videojuegos basados en datos históricos
-Analizar tendencias temporales y ciclos de vida de plataformas
-Segmentar mercados regionales (Norteamérica, Europa, Japón)
-Evaluar correlaciones entre reseñas y ventas
-Realizar pruebas estadísticas para validar hipótesis de mercado
-Proporcionar recomendaciones estratégicas para campañas publicitarias
-📊 Conjunto de Datos
-Período de análisis: 1980-2016 (enfoque en 2013-2016)  
-Volumen: 16,715 registros de videojuegos
+Este proyecto analiza datos históricos de ventas de videojuegos con el objetivo de identificar patrones relacionados con el éxito comercial de distintos títulos, plataformas y géneros.
 
-Estructura de datos:
-Variables principales:
-- name: Nombre del videojuego
-- platform: Plataforma de lanzamiento (PS4, Xbox One, PC, etc.)
-- year_of_release: Año de lanzamiento
-- genre: Género del juego (Action, Sports, RPG, etc.)
-- na_sales, eu_sales, jp_sales, other_sales: Ventas por región (millones USD)
-- critic_score: Puntuación de críticos (0-100)
-- user_score: Puntuación de usuarios (0-10)
-- rating: Clasificación ESRB (E, T, M, etc.)
+El análisis incluye exploración de datos, limpieza, visualizaciones y pruebas estadísticas para detectar tendencias del mercado y generar insights orientados a la toma de decisiones.
 
-🛠️ Tecnologías Utilizadas
-Python 3.9+
-Pandas: Manipulación y análisis de datos
-NumPy: Cálculos numéricos y estadísticas
-Matplotlib: Visualización de datos y gráficos
-SciPy: Pruebas estadísticas (t-test)
-Jupyter Notebook: Entorno de desarrollo
-🔧 Metodología de Análisis
-1. Preparación de Datos
-Normalización: Conversión de nombres de columnas a minúsculas
-Conversión de tipos: Estandarización de formatos numéricos y fechas
-Tratamiento de valores ausentes: Manejo estratégico de datos faltantes
-Cálculo de métricas: Creación de columna total_sales
-2. Análisis Exploratorio
-Tendencias temporales: Evolución de lanzamientos por año
-Análisis de plataformas: Identificación de líderes de mercado
-Distribución por géneros: Patrones de popularidad
-Correlaciones: Relación entre reseñas y ventas
-3. Segmentación Regional
-Perfiles de usuario: Análisis por región (NA, EU, JP)
-Preferencias de plataforma: Top 5 por mercado
-Géneros populares: Diferencias culturales
-Clasificaciones ESRB: Impacto por región
+## Funcionalidades del análisis
+
+- **Limpieza y preparación de datos**
+  - Normalización de columnas
+  - Conversión de tipos de datos
+  - Tratamiento de valores ausentes y duplicados
+
+- **Análisis exploratorio (EDA)**
+  - Juegos lanzados por año
+  - Plataformas más exitosas
+  - Géneros con mayores ventas
+  - Comparación de ventas por región
+
+- **Análisis estadístico**
+  - Correlación entre puntuaciones y ventas
+  - Pruebas de hipótesis
+  - Comparaciones entre mercados
+
+- **Visualizaciones**
+  - Histogramas
+  - Boxplots
+  - Diagramas de dispersión
+  - Gráficos de barras
+
+## Tecnologías utilizadas
+
+- [Python 3](https://www.python.org/)
+- [Pandas](https://pandas.pydata.org/) – análisis y manipulación de datos
+- [NumPy](https://numpy.org/) – operaciones numéricas
+- [Matplotlib](https://matplotlib.org/) – visualización de datos
+- [SciPy](https://scipy.org/) – pruebas estadísticas
+- [Jupyter Notebook](https://jupyter.org/) – entorno de desarrollo
+
+## Estructura del proyecto
+
+``` id="mjlwm0"
+.
+├── README.md
+├── video_game_analysis.ipynb
+├── games.csv
+└── images
+    ├── sales_distribution.png
+    ├── platforms_analysis.png
+    └── genres_analysis.png
+Cómo ejecutar el proyecto localmente
+
+Clona el repositorio:
+
+git clone <URL_DEL_REPOSITORIO>
+cd <NOMBRE_DEL_REPOSITORIO>
+
+2. Crea y activa un entorno virtual:
+   ```bash
+   python -m venv env
+   source env/bin/activate   # macOS/Linux
+   env\Scripts\activate      # Windows
+
+Instala las dependencias:
+
+pip install pandas numpy matplotlib scipy jupyter
+
+Ejecuta Jupyter Notebook:
+
+jupyter notebook
+Abre el archivo .ipynb
+Principales conclusiones
+Los géneros Action y Sports lideran las ventas globales.
+Las preferencias de los usuarios cambian según la región.
+Algunas plataformas presentan ciclos de vida claramente definidos.
+Las puntuaciones de críticos muestran relación con el rendimiento comercial de ciertos videojuegos.
