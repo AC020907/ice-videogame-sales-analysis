@@ -42,7 +42,7 @@ El análisis incluye exploración de datos, limpieza, visualizaciones y pruebas 
 ## Estructura del proyecto
 
 ``` id="mjlwm0"
-.
+
 ├── README.md
 ├── video_game_analysis.ipynb
 ├── games.csv
