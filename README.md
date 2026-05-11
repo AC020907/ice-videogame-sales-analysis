@@ -39,17 +39,6 @@ El análisis incluye exploración de datos, limpieza, visualizaciones y pruebas 
 - [SciPy](https://scipy.org/) – pruebas estadísticas
 - [Jupyter Notebook](https://jupyter.org/) – entorno de desarrollo
 
-## Estructura del proyecto
-
-``` id="mjlwm0"
-
-├── README.md
-├── video_game_analysis.ipynb
-├── games.csv
-└── images
-    ├── sales_distribution.png
-    ├── platforms_analysis.png
-    └── genres_analysis.png
 Cómo ejecutar el proyecto localmente
 
 Clona el repositorio:
